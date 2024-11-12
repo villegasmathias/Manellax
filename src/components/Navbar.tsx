@@ -35,13 +35,13 @@ export const Navbar = () => {
         {/* get started  */}
         <div className="gap-3 nav__item mr-2 lg:flex ml-auto lg:ml-0 lg:order-2">
             <ThemeChanger />
-            <div className="hidden mr-3 lg:flex nav__item">
+            {/* <div className="hidden mr-3 lg:flex nav__item">
               <Link href="/" className="px-6 py-2 text-white bg-indigo-600 rounded-md md:ml-5">
                 Comencemos!
               </Link>
-            </div>
+            </div> */}
         </div>
-                
+
         <Disclosure>
           {({ open }) => (
             <>
@@ -75,15 +75,15 @@ export const Navbar = () => {
                           {item}
                       </Link>
                     ))}
-                    <Link href="/" className="w-full px-6 py-2 mt-3 text-center text-white bg-indigo-600 rounded-md lg:ml-5">         
+                    {/* <Link href="/" className="w-full px-6 py-2 mt-3 text-center text-white bg-indigo-600 rounded-md lg:ml-5">
                         Get Started
-                    </Link>
+                    </Link> */}
                   </>
                 </Disclosure.Panel>
             </>
           )}
         </Disclosure>
-        
+
         {/* menu  */}
         <div className="hidden text-center lg:flex lg:items-center">
           <ul className="items-center justify-end flex-1 pt-6 list-none lg:pt-0 lg:flex">
