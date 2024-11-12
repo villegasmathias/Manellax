@@ -13,12 +13,10 @@ export default function Home() {
     <Container>
       <Hero />
       <SectionTitle
-        preTitle="Nextly Benefits"
-        title=" Why should you use this landing page"
+        preTitle="Servicios de Manellax"
+        title=" Consultoría industrial integral"
       >
-        Nextly is a free landing page & marketing website template for startups
-        and indie projects. Its built with Next.js & TailwindCSS. And its
-        completely open-source.
+        Inspeccion de obras, redacción de procedimientos, reclutamiento de nuevos talentos, recursos humanos y capacitaciones.
       </SectionTitle>
 
       <Benefits data={benefitOne} />
