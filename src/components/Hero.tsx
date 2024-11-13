@@ -11,9 +11,6 @@ export const Hero = () => {
             <h1 className="text-4xl font-bold leading-snug tracking-tight text-gray-800 lg:text-4xl lg:leading-tight xl:text-6xl xl:leading-tight dark:text-white">
               Bienvenido!
             </h1>
-            {/* <p className="py-5 text-xl leading-normal text-gray-500 lg:text-xl xl:text-2xl dark:text-gray-300">
-                Manellax cuenta con mas de 15 años de trayectoria en gestionar recursos humanos de distintas areas tales como apuntador,operador de END, supervisor, planificador e inspector, control de calidad, producción, seguridad y salud en obras.
-            </p> */}
             <p className="py-5 text-xl leading-normal text-gray-500 lg:text-xl xl:text-2xl dark:text-gray-300">
                 Manellax cuenta con mas de 15 años de trayectoria en gestionar <b>recursos humanos, redaccion de procedimientos, reclutamiento de nuevos talentos, capacitaciones</b>.
                 Y ahora tambien contamos con servicios de <b>construcción de prefabricados de tuberías y premoldeados de hormigón</b>.
@@ -60,7 +57,7 @@ export const Hero = () => {
           </div>
         </div>
       </Container>
-      {/* <Container>
+      <Container>
         <div className="flex flex-col justify-center">
           <div className="text-xl text-center text-gray-700 dark:text-white">
             Trusted by <span className="text-indigo-600">2000+</span>{" "}
@@ -85,7 +82,7 @@ export const Hero = () => {
             </div>
           </div>
         </div>
-      </Container> */}
+      </Container>
     </>
   );
 }

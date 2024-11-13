@@ -7,26 +7,37 @@ import {
   SunIcon,
 } from "@heroicons/react/24/solid";
 
-import benefitOneImg from "../../public/img/benefit-one.png";
-import benefitTwoImg from "../../public/img/benefit-two.png";
+import benefitOneImgOld from "../../public/img/image.png";
+import benefitTwoImg from "../../public/img/trabajadorTuberia.jpg";
+import benefitOneImg from "../../public/img/obreroTrabajando.jpg";
 
-const benefitOne = {
-  title: "Highlight your benefits",
-  desc: "You can use this space to highlight your first benefit or a feature of your product. It can also contain an image or Illustration like in the example along with some bullet points.",
+const benefitOneOld = {
+  title: "Consultoría para empresas",
+  desc: "Asesoría especializada en gestionar recursos humanos, mejorar el clima laboral, enfocada en la necesidad de la empresa. Te ayudaremos a encontrar al mejor candidato en cualquier area especializada de petróleo, gas y minería, asegurando obtener el talento mas clasificado, ademas de realizar seguimiento.",
   image: benefitOneImg,
   bullets: [
     {
-      title: "Understand your customers",
-      desc: "Then explain the first point breifly in one or two lines.",
+      title: "Estrategia de retencion de talento",
+      desc: "Here you can add the next benefit point.",
       icon: <FaceSmileIcon />,
     },
     {
-      title: "Improve acquisition",
+      title: "Políticas de seguridad y calidad",
       desc: "Here you can add the next benefit point.",
       icon: <ChartBarSquareIcon />,
     },
     {
-      title: "Drive customer retention",
+      title: "Dictado de capacitaciones",
+      desc: "This will be your last bullet point in this section.",
+      icon: <CursorArrowRaysIcon />,
+    },
+    {
+      title: "Elaboración de procedimientos de trabajo generales y específicos",
+      desc: "This will be your last bullet point in this section.",
+      icon: <CursorArrowRaysIcon />,
+    },
+    {
+      title: "Desarrollo organizacional",
       desc: "This will be your last bullet point in this section.",
       icon: <CursorArrowRaysIcon />,
     },
@@ -34,22 +45,90 @@ const benefitOne = {
 };
 
 const benefitTwo = {
-  title: "Offer more benefits here",
-  desc: "You can use this same layout with a flip image to highlight your rest of the benefits of your product. It can also contain an image or Illustration as above section along with some bullet points.",
+  title: "Construcción de prefabricados de tuberías",
+  desc: "Asesoría especializada en gestionar recursos humanos, mejorar el clima laboral, enfocada en la necesidad de la empresa. Te ayudaremos a encontrar al mejor candidato en cualquier area especializada de petróleo, gas y minería, asegurando obtener el talento mas clasificado, ademas de realizar seguimiento.",
   image: benefitTwoImg,
   bullets: [
     {
-      title: "Mobile Responsive Template",
+      title: "Recepción de materiales",
       desc: "Nextly is designed as a mobile first responsive template.",
       icon: <DevicePhoneMobileIcon />,
     },
     {
-      title: "Powered by Next.js & TailwindCSS",
+      title: "Armado y presentacion de pieza",
       desc: "This template is powered by latest technologies and tools.",
       icon: <AdjustmentsHorizontalIcon />,
     },
     {
-      title: "Dark & Light Mode",
+      title: "Soldaduras",
+      desc: "Nextly comes with a zero-config light & dark mode. ",
+      icon: <SunIcon />,
+    },
+    {
+      title: "Aplicaciones de esquemas de pintura",
+      desc: "Nextly comes with a zero-config light & dark mode. ",
+      icon: <SunIcon />,
+    },
+    {
+      title: "Inspeccion de pintura",
+      desc: "Nextly comes with a zero-config light & dark mode. ",
+      icon: <SunIcon />,
+    },
+    {
+      title: "Aplicaciones de recubrimiento a demanda",
+      desc: "Nextly comes with a zero-config light & dark mode. ",
+      icon: <SunIcon />,
+    },
+    {
+      title: "Inspecciones finales",
+      desc: "Nextly comes with a zero-config light & dark mode. ",
+      icon: <SunIcon />,
+    },
+    {
+      title: "Pruebas finales",
+      desc: "Nextly comes with a zero-config light & dark mode. ",
+      icon: <SunIcon />,
+    },
+    {
+      title: "Despacho",
+      desc: "Nextly comes with a zero-config light & dark mode. ",
+      icon: <SunIcon />,
+    },
+  ],
+};
+
+const benefitOne = {
+  title: "Construccion de premoldeados de hormigón",
+  desc: "Asesoría especializada en gestionar recursos humanos, mejorar el clima laboral, enfocada en la necesidad de la empresa. Te ayudaremos a encontrar al mejor candidato en cualquier area especializada de petróleo, gas y minería, asegurando obtener el talento mas clasificado, ademas de realizar seguimiento.",
+  image: benefitOneImg,
+  bullets: [
+    {
+      title: "Doblado y armado de estructuras de hierro",
+      desc: "Nextly is designed as a mobile first responsive template.",
+      icon: <DevicePhoneMobileIcon />,
+    },
+    {
+      title: "Preparación de encofrado",
+      desc: "This template is powered by latest technologies and tools.",
+      icon: <AdjustmentsHorizontalIcon />,
+    },
+    {
+      title: "Vaciado de hormigón",
+      desc: "Nextly comes with a zero-config light & dark mode. ",
+      icon: <SunIcon />,
+    },
+    {
+      title: "Inspecciones",
+      desc: "Nextly comes with a zero-config light & dark mode. ",
+      icon: <SunIcon />,
+    },
+    {
+      title: "Liberación final",
+      desc: "Nextly comes with a zero-config light & dark mode. ",
+      icon: <SunIcon />,
+    },
+    {
+      title: "Preparaciones para despacho",
       desc: "Nextly comes with a zero-config light & dark mode. ",
       icon: <SunIcon />,
     },
