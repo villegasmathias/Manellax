@@ -46,7 +46,6 @@ const benefitOneOld = {
 
 const benefitTwo = {
   title: "Construcción de prefabricados de tuberías",
-  desc: "Asesoría especializada en gestionar recursos humanos, mejorar el clima laboral, enfocada en la necesidad de la empresa. Te ayudaremos a encontrar al mejor candidato en cualquier area especializada de petróleo, gas y minería, asegurando obtener el talento mas clasificado, ademas de realizar seguimiento.",
   image: benefitTwoImg,
   bullets: [
     {
@@ -99,7 +98,6 @@ const benefitTwo = {
 
 const benefitOne = {
   title: "Construccion de premoldeados de hormigón",
-  desc: "Asesoría especializada en gestionar recursos humanos, mejorar el clima laboral, enfocada en la necesidad de la empresa. Te ayudaremos a encontrar al mejor candidato en cualquier area especializada de petróleo, gas y minería, asegurando obtener el talento mas clasificado, ademas de realizar seguimiento.",
   image: benefitOneImg,
   bullets: [
     {

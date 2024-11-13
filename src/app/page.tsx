@@ -6,6 +6,7 @@ import { Video } from "@/components/Video";
 import { Testimonials } from "@/components/Testimonials";
 import { Faq } from "@/components/Faq";
 import { Cta } from "@/components/Cta";
+import Image from "next/image";
 
 import { benefitOne, benefitTwo } from "@/components/data";
 export default function Home() {
@@ -19,10 +20,20 @@ export default function Home() {
         Inspeccion de obras, redacción de procedimientos, reclutamiento de nuevos talentos, recursos humanos y capacitaciones.
       </SectionTitle>
 
+      <Container className={`flex w-full justify-center`}>
+        <Image
+          src="/img/image.png"
+          alt="manellax"
+          width={850}
+          height={600}
+          className=" content-center flex pb-20"
+        />
+      </Container>
+
       <Benefits data={benefitOne} />
       <Benefits imgPos="right" data={benefitTwo} />
 
-      <SectionTitle
+      {/* <SectionTitle
         preTitle="Watch a video"
         title="Learn how to fullfil your needs"
       >
@@ -49,7 +60,7 @@ export default function Home() {
       </SectionTitle>
 
       <Faq />
-      <Cta />
+      <Cta /> */}
     </Container>
   );
 }

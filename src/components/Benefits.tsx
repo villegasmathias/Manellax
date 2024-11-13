@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import { Container }  from "@/components/Container";
+import { CheckIcon, FaceSmileIcon } from "@heroicons/react/24/solid";
 
 interface BenefitsProps {
   imgPos?: "left" | "right";
@@ -73,6 +74,9 @@ function Benefit(props: any) {
             className: "w-7 h-7 text-indigo-50",
           })}
         </div> */}
+        {React.cloneElement(<CheckIcon />, {
+          className: "w-7 h-7 text-blue",
+        })}
         <div>
           <h4 className="text-xl font-medium text-gray-800 dark:text-gray-200">
             {props.title}
