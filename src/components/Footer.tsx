@@ -7,34 +7,32 @@ export function Footer() {
   const navigation = ["Product", "Features", "Pricing", "Company", "Blog"];
   const legal = ["Terms", "Privacy", "Legal"];
   return (
-    <div className="relative">
+    <div className="relative pb-4">
       <Container>
-        <div className="grid max-w-screen-xl grid-cols-1 gap-10 pt-10 mx-auto mt-5 border-t border-gray-100 dark:border-trueGray-700 lg:grid-cols-5">
+        <div className="grid max-w-screen-xl items-center justify-around grid-cols-1 gap-10 pt-10 mx-auto mt-5 border-t border-gray-100 dark:border-trueGray-700 lg:grid-cols-3">
           <div className="lg:col-span-2">
             <div>
-              {" "}
-              <Link
-                href="/"
-                className="flex items-center space-x-2 text-2xl font-medium text-indigo-500 dark:text-gray-100"
-              >
+              <Link href="/">
+          <span className="flex items-center space-x-2 text-2xl font-medium text-indigo-500 dark:text-gray-100">
+              <span>
                 <Image
-                  src="/img/logo.svg"
-                  alt="N"
-                  width="32"
-                  height="32"
-                  className="w-8"
+                  src="/img/manellax-re.png"
+                  width="200"
+                  alt="logo "
+                  height="150"
+                  className="w-36, h-30"
                 />
-                <span>Nextly</span>
-              </Link>
+              </span>
+              <span className="rounded-lg  bg-indigo-600 text-white p-1">M</span>
+              </span>
+        </Link>
             </div>
 
             <div className="max-w-md mt-4 text-gray-500 dark:text-gray-400">
-              Nextly is a free landing page & marketing website template for
-              startups and indie projects. Its built with Next.js & TailwindCSS.
-              And its completely open-source.
+            Ofrecemos un servicio integral de consultoría diseñado para satisfacer las necesidades específicas de las empresas en las industrias del gas,petróleo y minería.
             </div>
 
-            <div className="mt-5">
+            {/* <div className="mt-5">
               <a
                 href="https://vercel.com/?utm_source=web3templates&utm_campaign=oss"
                 target="_blank"
@@ -48,10 +46,10 @@ export function Footer() {
                   height="44"
                 />
               </a>
-            </div>
+            </div> */}
           </div>
 
-          <div>
+          {/* <div>
             <div className="flex flex-wrap w-full -mt-2 -ml-3 lg:ml-0">
               {navigation.map((item, index) => (
                 <Link
@@ -76,9 +74,9 @@ export function Footer() {
                 </Link>
               ))}
             </div>
-          </div>
+          </div> */}
           <div className="">
-            <div>Follow us</div>
+            <div>Siguenos</div>
             <div className="flex mt-5 space-x-5 text-gray-400 dark:text-gray-500">
               <a
                 href="https://twitter.com/web3templates"
@@ -112,7 +110,7 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="my-10 text-sm text-center text-gray-600 dark:text-gray-400">
+        {/* <div className="my-10 text-sm text-center text-gray-600 dark:text-gray-400">
           Copyright © {new Date().getFullYear()}. Made with ♥ by{" "}
           <a href="https://web3templates.com/" target="_blank" rel="noopener">
             Web3Templates.
@@ -121,10 +119,10 @@ export function Footer() {
           <a href="https://www.glazestock.com/" target="_blank" rel="noopener ">
             Glazestock
           </a>
-        </div>
+        </div> */}
       </Container>
       {/* Do not remove this */}
-      <Backlink />
+      {/* <Backlink /> */}
     </div>
   );
 }

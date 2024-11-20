@@ -1,30 +1,34 @@
-import Image from "next/image";
-import { Container } from "@/components/Container";
-import heroImg from "../../public/img/hero.png";
+import Image from 'next/image';
+import { Container } from '@/components/Container';
+import heroImg from '../../public/img/hero.png';
 
 export const Hero = () => {
   return (
     <>
       <Container className="flex flex-wrap ">
-        <div className="flex items-center w-full lg:w-1/2">
-          <div className="max-w-2xl mb-8">
+        <div className="flex justify-center items-center w-full lg:w-1/2">
+          <div className="max-w-2xl mb-8 text-center">
             <h1 className="text-4xl font-bold leading-snug tracking-tight text-gray-800 lg:text-4xl lg:leading-tight xl:text-6xl xl:leading-tight dark:text-white">
-              Bienvenido!
+              ¡Bienvenidos!
             </h1>
             <p className="py-5 text-xl leading-normal text-gray-500 lg:text-xl xl:text-2xl dark:text-gray-300">
-                Manellax cuenta con mas de 15 años de trayectoria en gestionar <b>recursos humanos, redaccion de procedimientos, reclutamiento de nuevos talentos, capacitaciones</b>.
-                Y ahora tambien contamos con servicios de <b>construcción de prefabricados de tuberías y premoldeados de hormigón</b>.
+              Ofrecemos un servicio integral de consultoría diseñado para
+              satisfacer las necesidades específicas de empresas de las
+              industrias del gas, petróleo y minería. Nuestro compromiso con la
+              excelencia garantiza que cada paquete de servicios se adapte a las
+              demandas del cliente, proporcionando soluciones efectivas y
+              sostenibles.
             </p>
 
-            <div className="flex flex-col items-start space-y-3 sm:space-x-4 sm:space-y-0 sm:items-center sm:flex-row">
-              <a
+            {/* <a
                 href="https://web3templates.com/templates/nextly-landing-page-template-for-startups"
                 target="_blank"
                 rel="noopener"
                 className="px-8 py-4 text-lg font-medium text-center text-white bg-indigo-600 rounded-md ">
-                Contactanos!
-              </a>
-              {/* <a
+                ¡Contáctanos!
+              </a> */}
+            {/* <div className="flex space-y-3 sm:space-x-4 sm:space-y-0 sm:flex-row"> */}
+            {/* <a
                 href="https://github.com/web3templates/nextly-template/"
                 target="_blank"
                 rel="noopener"
@@ -42,16 +46,16 @@ export const Hero = () => {
                 </svg>
                 <span> View on Github</span>
               </a> */}
-            </div>
+            {/* </div> */}
           </div>
         </div>
-        <div className="flex items-center justify-center w-full lg:w-1/2">
+        <div className="flex justify-center w-full lg:w-1/2">
           <div className="">
             <Image
               src="/img/manellax_logo_1.png"
               width="616"
               height="617"
-              className={"object-cover"}
+              className={'object-cover'}
               alt="Hero Illustration"
             />
           </div>
@@ -59,5 +63,4 @@ export const Hero = () => {
       </Container>
     </>
   );
-}
-
+};

@@ -22,7 +22,7 @@ export function PopupWidget() {
   const [isSuccess, setIsSuccess] = useState(false);
   const [Message, setMessage] = useState("");
 
-  const userName = useWatch({ control, name: "name", defaultValue: "Someone" });
+  const userName = useWatch({ control, name: "Enzo"});
 
   const onSubmit = async (data: any, e: any) => {
     console.log(data);
@@ -119,9 +119,9 @@ export function PopupWidget() {
             >
               <DisclosurePanel className=" flex flex-col  overflow-hidden left-0 h-full w-full sm:w-[350px] min-h-[250px] sm:h-[600px] border border-gray-300 dark:border-gray-800 bg-white shadow-2xl rounded-md sm:max-h-[calc(100vh-120px)]">
                 <div className="flex flex-col items-center justify-center h-32 p-5 bg-indigo-600">
-                  <h3 className="text-lg text-white">How can we help?</h3>
+                  <h3 className="text-lg text-white">¿Como podemos ayudarte?</h3>
                   <p className="text-white opacity-50">
-                    We usually respond in a few hours
+                    Usualmente respondemos en unas pocas horas
                   </p>
                 </div>
                 <div className="flex-grow h-full p-6 overflow-auto bg-gray-50 ">
@@ -129,17 +129,17 @@ export function PopupWidget() {
                     <form onSubmit={handleSubmit(onSubmit)} noValidate>
                       <input
                         type="hidden"
-                        value="YOUR_ACCESS_KEY_HERE"
+                        value="76958020-0af6-4717-9eb4-93d778329976"
                         {...register("apikey")}
                       />
                       <input
                         type="hidden"
-                        value={`${userName} sent a message from Nextly`}
+                        value={`${userName} te envió un mensaje desde https://manellax.com/`}
                         {...register("subject")}
                       />
                       <input
                         type="hidden"
-                        value="Nextly Template"
+                        value="https://manellax.com/"
                         {...register("from_name")}
                       />
                       <input
@@ -154,14 +154,14 @@ export function PopupWidget() {
                           htmlFor="full_name"
                           className="block mb-2 text-sm text-gray-600 dark:text-gray-400"
                         >
-                          Full Name
+                          Nombre y apellido
                         </label>
                         <input
                           type="text"
                           id="full_name"
-                          placeholder="John Doe"
+                          placeholder="Enzo Calderón"
                           {...register("name", {
-                            required: "Full name is required",
+                            required: "Ingresá tu nombre completo",
                             maxLength: 80,
                           })}
                           className={`w-full px-3 py-2 text-gray-600 placeholder-gray-300 bg-white border border-gray-300 rounded-md focus:outline-none focus:ring   ${
@@ -182,19 +182,19 @@ export function PopupWidget() {
                           htmlFor="email"
                           className="block mb-2 text-sm text-gray-600 dark:text-gray-400"
                         >
-                          Email Address
+                          Direccion de correo
                         </label>
                         <input
                           type="email"
                           id="email"
                           {...register("email", {
-                            required: "Enter your email",
+                            required: "Ingresá tu email",
                             pattern: {
                               value: /^\S+@\S+$/i,
-                              message: "Please enter a valid email",
+                              message: "Por favor, ingresá un email válido",
                             },
                           })}
-                          placeholder="you@company.com"
+                          placeholder="tu@correo.com"
                           className={`w-full px-3 py-2 text-gray-600 placeholder-gray-300 bg-white border border-gray-300 rounded-md focus:outline-none focus:ring   ${
                             errors.email
                               ? "border-red-600 focus:border-red-600 ring-red-100"
@@ -214,16 +214,16 @@ export function PopupWidget() {
                           htmlFor="message"
                           className="block mb-2 text-sm text-gray-600 dark:text-gray-400"
                         >
-                          Your Message
+                          Tu mensaje
                         </label>
 
                         <textarea
                           rows={4}
                           id="message"
                           {...register("message", {
-                            required: "Enter your Message",
+                            required: "Ingresá tu mensaje",
                           })}
-                          placeholder="Your Message"
+                          placeholder="Tu mensaje"
                           className={`w-full px-3 py-2 text-gray-600 placeholder-gray-300 bg-white border border-gray-300 rounded-md h-28 focus:outline-none focus:ring   ${
                             errors.message
                               ? "border-red-600 focus:border-red-600 ring-red-100"
@@ -264,11 +264,11 @@ export function PopupWidget() {
                               ></path>
                             </svg>
                           ) : (
-                            "Send Message"
+                            "Enviar mensaje"
                           )}
                         </button>
                       </div>
-                      <p
+                      {/* <p
                         className="text-xs text-center text-gray-400"
                         id="result"
                       >
@@ -283,7 +283,7 @@ export function PopupWidget() {
                             Web3Forms
                           </a>
                         </span>
-                      </p>
+                      </p> */}
                     </form>
                   )}
 
@@ -304,14 +304,14 @@ export function PopupWidget() {
                         />
                       </svg>
                       <h3 className="py-5 text-xl text-green-500">
-                        Message sent successfully
+                        Mensaje enviado correctamente
                       </h3>
-                      <p className="text-gray-700 md:px-3">{Message}</p>
+                      {/* <p className="text-gray-700 md:px-3">{Message}</p> */}
                       <button
                         className="mt-6 text-indigo-600 focus:outline-none"
                         onClick={() => reset()}
                       >
-                        Go back
+                        Volver
                       </button>
                     </div>
                   )}
@@ -334,14 +334,14 @@ export function PopupWidget() {
                       </svg>
 
                       <h3 className="text-xl text-red-400 py-7">
-                        Oops, Something went wrong!
+                        Oops, ocurrió un error!
                       </h3>
-                      <p className="text-gray-700 md:px-3">{Message}</p>
+                      {/* <p className="text-gray-700 md:px-3">{Message}</p> */}
                       <button
                         className="mt-6 text-indigo-600 focus:outline-none"
                         onClick={() => reset()}
                       >
-                        Go back
+                        Volver
                       </button>
                     </div>
                   )}
