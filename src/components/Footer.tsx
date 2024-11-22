@@ -2,6 +2,8 @@ import Link from "next/link";
 import Image from "next/image";
 import React from "react";
 import { Container } from "@/components/Container";
+import { SunIcon } from "@heroicons/react/24/solid";
+import { Mali } from "next/font/google";
 
 export function Footer() {
   const navigation = ["Product", "Features", "Pricing", "Company", "Blog"];
@@ -9,28 +11,28 @@ export function Footer() {
   return (
     <div className="relative pb-4">
       <Container>
-        <div className="grid max-w-screen-xl items-center justify-around grid-cols-1 gap-10 pt-10 mx-auto mt-5 border-t border-gray-100 dark:border-trueGray-700 lg:grid-cols-3">
-          <div className="lg:col-span-2">
+        <div id='footer' className="grid max-w-screen-xl items-center justify-around grid-cols-1 gap-10 pt-10 mx-auto mt-5 border-t border-gray-100 dark:border-trueGray-700 lg:grid-cols-3">
+          <div className="grid grid-cols-3 justify-center">
             <div>
               <Link href="/">
           <span className="flex items-center space-x-2 text-2xl font-medium text-indigo-500 dark:text-gray-100">
               <span>
                 <Image
-                  src="/img/manellax-re.png"
+                  src="/img/recorte_manellax.png"
                   width="200"
                   alt="logo "
                   height="150"
                   className="w-36, h-30"
                 />
               </span>
-              <span className="rounded-lg  bg-indigo-600 text-white p-1">M</span>
+              {/* <span className="rounded-lg  bg-indigo-600 text-white p-1">M</span> */}
               </span>
         </Link>
             </div>
 
-            <div className="max-w-md mt-4 text-gray-500 dark:text-gray-400">
+            {/* <div className="max-w-md mt-4 text-gray-500 dark:text-gray-400">
             Ofrecemos un servicio integral de consultoría diseñado para satisfacer las necesidades específicas de las empresas en las industrias del gas,petróleo y minería.
-            </div>
+            </div> */}
 
             {/* <div className="mt-5">
               <a
@@ -75,7 +77,13 @@ export function Footer() {
               ))}
             </div>
           </div> */}
-          <div className="">
+          <div className="grid grid-cols-3">
+            <div className="w-full justify-center">
+              <p>✉ info@manellax.com.ar</p>
+              <p>✆ 2615881485 / 2616127721</p>
+            </div>
+          </div>
+          <div className="grid grid-cols-3">
             <div>Siguenos</div>
             <div className="flex mt-5 space-x-5 text-gray-400 dark:text-gray-500">
               <a
