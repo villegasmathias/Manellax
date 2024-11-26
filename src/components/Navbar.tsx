@@ -10,24 +10,25 @@ export const Navbar = () => {
     { title: 'Servicios', id: 'services' },
     { title: 'Quienes somos', id: 'about' },
     { title: 'Empleos', id: 'jobs' },
+    { title: 'Contactos', id: 'footer'}
   ];
 
   return (
     <div className="w-full">
-      <nav className="container relative flex flex-wrap items-center justify-between mx-auto p-8 lg:justify-between">
+      <nav className="container relative flex flex-wrap items-center justify-between mx-auto p-2 lg:justify-between">
         {/* Logo  */}
         <Link href="#home">
           <span className="flex items-center space-x-2 text-2xl font-medium text-indigo-500 dark:text-gray-100">
             <span>
               <Image
-                src="/img/manellax-re.png"
+                src="/img/recorte_manellax.png"
                 width="200"
                 alt="logo "
                 height="150"
                 className="w-36, h-30"
               />
             </span>
-            <span className="rounded-lg  bg-indigo-600 text-white p-1">M</span>
+            {/* <span className="rounded-lg  bg-indigo-600 text-white p-1">M</span> */}
           </span>
         </Link>
 

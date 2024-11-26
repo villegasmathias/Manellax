@@ -9,77 +9,35 @@ export function Footer() {
   return (
     <div className="relative pb-4">
       <Container>
-        <div className="grid max-w-screen-xl items-center justify-around grid-cols-1 gap-10 pt-10 mx-auto mt-5 border-t border-gray-100 dark:border-trueGray-700 lg:grid-cols-3">
-          <div className="lg:col-span-2">
-            <div>
-              <Link href="/">
-          <span className="flex items-center space-x-2 text-2xl font-medium text-indigo-500 dark:text-gray-100">
-              <span>
-                <Image
-                  src="/img/manellax-re.png"
-                  width="200"
-                  alt="logo "
-                  height="150"
-                  className="w-36, h-30"
-                />
+        <div id='footer' className="flex max-w-screen-xl items-center justify-evenly grid-cols-1 gap-10 pt-10 mx-auto mt-5 border-t border-gray-100 dark:border-trueGray-700 lg:grid-cols-3">
+          <div>
+            <Link href="/">
+              <span className="flex items-center space-x-2 text-2xl font-medium text-indigo-500 dark:text-gray-100">
+                <span>
+                  <Image
+                    src="/img/recorte_manellax.png"
+                    width="200"
+                    alt="logo "
+                    height="150"
+                    className="w-36, h-30"
+                  />
+                </span>
               </span>
-              <span className="rounded-lg  bg-indigo-600 text-white p-1">M</span>
-              </span>
-        </Link>
-            </div>
-
-            <div className="max-w-md mt-4 text-gray-500 dark:text-gray-400">
-            Ofrecemos un servicio integral de consultoría diseñado para satisfacer las necesidades específicas de las empresas en las industrias del gas,petróleo y minería.
-            </div>
-
-            {/* <div className="mt-5">
-              <a
-                href="https://vercel.com/?utm_source=web3templates&utm_campaign=oss"
-                target="_blank"
-                rel="noopener"
-                className="relative block w-44"
-              >
-                <Image
-                  src="/img/vercel.svg"
-                  alt="Powered by Vercel"
-                  width="212"
-                  height="44"
-                />
-              </a>
-            </div> */}
+            </Link>
           </div>
-
-          {/* <div>
-            <div className="flex flex-wrap w-full -mt-2 -ml-3 lg:ml-0">
-              {navigation.map((item, index) => (
-                <Link
-                  key={index}
-                  href="/"
-                  className="w-full px-4 py-2 text-gray-500 rounded-md dark:text-gray-300 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-trueGray-700"
-                >
-                  {item}
-                </Link>
-              ))}
+          <div>
+            <div className="flex inline gap-2 mb-2">
+              <Email/><div className=""> info@manellax.com.ar </div>
+            </div>
+            <div className="flex inline gap-2">
+              <Phone/><div> 2615881485 / 2616127721 </div>
             </div>
           </div>
           <div>
-            <div className="flex flex-wrap w-full -mt-2 -ml-3 lg:ml-0">
-              {legal.map((item, index) => (
-                <Link
-                  key={index}
-                  href="/"
-                  className="w-full px-4 py-2 text-gray-500 rounded-md dark:text-gray-300 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-trueGray-700"
-                >
-                  {item}
-                </Link>
-              ))}
-            </div>
-          </div> */}
-          <div className="">
-            <div>Siguenos</div>
-            <div className="flex mt-5 space-x-5 text-gray-400 dark:text-gray-500">
+            <div className="pb-2">Siguenos en</div>
+            <div className="flex space-x-5 text-gray-400 dark:text-gray-500">
               <a
-                href="https://twitter.com/web3templates"
+                href="https://twitter.com/manellax"
                 target="_blank"
                 rel="noopener"
               >
@@ -87,7 +45,7 @@ export function Footer() {
                 <Twitter />
               </a>
               <a
-                href="https://facebook.com/web3templates"
+                href="https://facebook.com/manellax"
                 target="_blank"
                 rel="noopener"
               >
@@ -95,31 +53,20 @@ export function Footer() {
                 <Facebook />
               </a>
               <a
-                href="https://instagram.com/web3templates"
+                href="https://instagram.com/manellax"
                 target="_blank"
                 rel="noopener"
               >
                 <span className="sr-only">Instagram</span>
                 <Instagram />
               </a>
-              <a href="https://linkedin.com/" target="_blank" rel="noopener">
+              <a href="https://linkedin.com/manellax" target="_blank" rel="noopener">
                 <span className="sr-only">Linkedin</span>
                 <Linkedin />
               </a>
             </div>
           </div>
         </div>
-
-        {/* <div className="my-10 text-sm text-center text-gray-600 dark:text-gray-400">
-          Copyright © {new Date().getFullYear()}. Made with ♥ by{" "}
-          <a href="https://web3templates.com/" target="_blank" rel="noopener">
-            Web3Templates.
-          </a>{" "}
-          Illustrations from{" "}
-          <a href="https://www.glazestock.com/" target="_blank" rel="noopener ">
-            Glazestock
-          </a>
-        </div> */}
       </Container>
       {/* Do not remove this */}
       {/* <Backlink /> */}
@@ -196,8 +143,35 @@ const Backlink = () => {
           fill="#F7FAFC"
         />
       </svg>
-
-      <span>Web3Templates</span>
     </a>
   );
 };
+
+const Email = ({ size = 20 }) => (
+  <svg 
+    xmlns="http://www.w3.org/2000/svg" 
+    width={size}
+    height={size}
+    fill="none" 
+    viewBox="0 0 24 24" 
+    strokeWidth={1.5} 
+    stroke="currentColor"
+  >
+    <path d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+  </svg>
+);
+
+const Phone = ({ size = 20 }) => (
+  <svg 
+    xmlns="http://www.w3.org/2000/svg"
+    width={size}
+    height={size}
+    fill="none"
+    viewBox="0 0 24 24" 
+    strokeWidth={1.5} 
+    stroke="currentColor"
+  >
+  <path d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
+</svg>
+
+);
