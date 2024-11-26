@@ -127,11 +127,10 @@ export default function Home() {
           title="Trabaja con nosotros"
           preTitle="Podés trabajar con nosotros"
         />
-      </div>
       <Element name="jobs">
         <div
           id="jobs"
-          className="flex rounded-md mt-4 flex-col mx-auto  w-full sm:w-[650px] min-h-[250px] sm:h-[600px] border border-gray-300 dark:border-gray-800 bg-white shadow-2xl sm:max-h-[calc(100vh-120px)]">
+          className="flex rounded-md mt-4 flex-col mx-auto w-full sm:w-[650px] min-h-[250px] sm:h-[600px] border border-gray-300 dark:border-gray-800 bg-white shadow-2xl sm:max-h-[calc(100vh-120px)]">
           <div className="flex flex-col items-center justify-center h-32 p-5 bg-indigo-600">
             <h3 className="text-lg text-white">¡Envíanos tu curriculum!</h3>
             <p className="text-white opacity-50">Adjunta tu archivo</p>
@@ -342,6 +341,7 @@ export default function Home() {
           </div>
         </div>
       </Element>
+      </div>
     </Container>
   );
 }
