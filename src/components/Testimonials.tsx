@@ -10,7 +10,7 @@ export const Testimonials = () => {
   return (
     <Container>
       <div className="gap-10 lg:grid-cols-2 mt-8">
-        <div className="flex gap-10 items-center justify-center pb-10 ">
+        <div className="flex flex-wrap gap-10 items-center justify-center pb-10 ">
           <div className="">
             <div className="flex flex-col justify-between w-80 h-96 bg-gray-100 px-12 rounded-2xl py-10 dark:bg-trueGray-800">
               <div className="self-center">
@@ -51,7 +51,7 @@ export const Testimonials = () => {
             </div>
           </div>
         </div>
-        <div className="flex gap-10 items-center justify-center ">
+        <div className="flex flex-wrap gap-10 items-center justify-center ">
           <div className="">
             <div className="flex flex-col justify-between w-80 h-96 bg-gray-100 px-12 rounded-2xl py-10 dark:bg-trueGray-800">
               <div className="self-center">
