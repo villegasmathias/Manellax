@@ -9,14 +9,14 @@ export const Navbar = () => {
     { title: 'Servicios', id: 'services' },
     { title: 'Quienes somos', id: 'about' },
     { title: 'Empleos', id: 'jobs' },
-    { title: 'Contactos', id: 'footer'}
+    { title: 'Contactos', id: 'footer' },
   ];
 
   return (
     <div className="w-full">
-      <nav className="container relative flex flex-wrap items-center justify-between mx-auto p-2 lg:justify-between">
+      <nav className=" shadow-md bg-gradient-to-r from-blue-700 via-blue-500 to-blue-200 relative flex flex-wrap items-center justify-between mx-auto p-8 lg:justify-between">
         {/* Logo  */}
-        <Link href="#home" className='flex inline gap-2'>
+        <Link href="#home" className="flex  gap-2">
           <Image
             src="/img/manellax-simple-recorte.png"
             width="30"
@@ -24,7 +24,9 @@ export const Navbar = () => {
             height="30"
           />
           <div className="flex items-center">
-            <h1 className=""><b>MANELLAX</b></h1>
+            <h1 className="">
+              <b>MANELLAX</b>
+            </h1>
           </div>
         </Link>
 
@@ -42,7 +44,7 @@ export const Navbar = () => {
                       offset: -25,
                     });
                   }}
-                  className="inline-block px-4 py-2 text-lg font-normal text-gray-800 no-underline rounded-md dark:text-gray-200 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-gray-800">
+                  className="inline-block px-4 py-2 text-lg font-normal text-gray-800 no-underline rounded-md dark:text-gray-200 hover:text-blue-700 focus:text-blue-700 focus:bg-blue-100 focus:outline-none dark:focus:bg-gray-800">
                   {menu.title}
                 </button>
               </li>

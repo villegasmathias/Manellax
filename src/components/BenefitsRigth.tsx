@@ -17,27 +17,12 @@ interface BenefitsProps {
     }[];
   };
 }
-export const Benefits = (props: Readonly<BenefitsProps>) => {
+export const BenefitsRigth = (props: Readonly<BenefitsProps>) => {
   const { data } = props;
   return (
-    <div className="flex flex-wrap mb-20 shadow-md pb-20 bg-gray-100">
+    <div className="flex flex-wrap shadow-md">
       <div
-        className={`flex items-center justify-center w-full lg:w-1/2
-        }`}>
-        <div>
-          <Image
-            src={data.image}
-            width={521}
-            height={521}
-            alt="Benefits"
-            className={'object-cover'}
-            placeholder="blur"
-            blurDataURL={data.image.src}
-          />
-        </div>
-      </div>
-
-      <div className={`flex flex-wrap items-center w-full lg:w-1/2`}>
+        className={`flex flex-wrap items-center justify-center w-full lg:w-1/2 pb-20`}>
         <div>
           <div className="flex flex-col w-full">
             <h3 className="max-w-2xl mt-3 text-3xl font-bold leading-snug tracking-tight text-gray-800 lg:leading-tight lg:text-4xl dark:text-white">
@@ -56,6 +41,21 @@ export const Benefits = (props: Readonly<BenefitsProps>) => {
               </Benefit>
             ))}
           </div>
+        </div>
+      </div>
+      <div
+        className={`flex items-center justify-center w-full lg:w-1/2
+        }`}>
+        <div>
+          <Image
+            src={data.image}
+            width={521}
+            height={521}
+            alt="Benefits"
+            className={'object-cover'}
+            placeholder="blur"
+            blurDataURL={data.image.src}
+          />
         </div>
       </div>
     </div>
