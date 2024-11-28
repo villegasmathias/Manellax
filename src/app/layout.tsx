@@ -7,6 +7,7 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { PopupWidget }  from "@/components/PopupWidget";
 
+import { Hero } from '@/components/Hero';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -25,6 +26,7 @@ export default function RootLayout({
       <body className={inter.className}>
         {/* <ThemeProvider attribute="class"> */}
           <Navbar />
+          <Hero />
           <div>{children}</div>
           <Footer />
           <PopupWidget />

@@ -63,11 +63,11 @@ export default function Home() {
   };
   return (
     <Container>
-      <Element name="home">
+      {/* <Element name="home" className="bg-[url('/img/ejemplo.gif')] bg-cover">
         <div id="home">
           <Hero />
         </div>
-      </Element>
+      </Element> */}
 
       <Element name="services">
         <div id="services">
