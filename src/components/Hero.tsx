@@ -6,7 +6,7 @@ export const Hero = () => {
   return (
     <>
       <div className="flex flex-wrap bg-[url('/img/Minas-galeria-animada.webp')] bg-cover ">
-        <div className="flex w-full bg-black/50 lg: p-20">
+        <div className="flex w-full bg-black/60 lg: p-20">
           <div className="flex justify-center items-center w-full lg:w-1/2">
               <div className="max-w-2xl mb-8 text-center">
                 <h1 className="text-4xl font-bold leading-snug tracking-tight text-gray-200 lg:text-4xl lg:leading-tight xl:text-6xl xl:leading-tight dark:text-white">
@@ -21,11 +21,11 @@ export const Hero = () => {
                   sostenibles.
                 </p>
               </div>
-            </div>
-            <div className="flex justify-center w-full lg:w-1/2">
+          </div>
+            <div className="flex justify-center items-center w-full lg:w-1/2">
               <div className="">
                 <Image
-                  src="/img/manellax_logo_1.png"
+                  src="/img/manellax-blanco-nuevo.png"
                   width="616"
                   height="617"
                   className={'object-cover'}
