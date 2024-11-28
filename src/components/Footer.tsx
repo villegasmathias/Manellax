@@ -9,7 +9,7 @@ export function Footer() {
   return (
     <div className="relative pb-4">
       <Container>
-        <div id='footer' className="flex max-w-screen-xl items-center justify-evenly grid-cols-1 gap-10 pt-10 mx-auto mt-5 border-t border-gray-100 dark:border-trueGray-700 lg:grid-cols-3">
+        <div id='footer' className="flex flex-wrap max-w-screen-xl items-center justify-evenly grid-cols-1 gap-10 pt-10 mx-auto mt-5 border-t border-gray-100 dark:border-trueGray-700 lg:grid-cols-3">
           <div>
             <Link href="/">
               <span className="flex items-center space-x-2 text-2xl font-medium text-indigo-500 dark:text-gray-100">

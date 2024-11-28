@@ -6,7 +6,6 @@ import { scroller } from 'react-scroll';
 
 export const Navbar = () => {
   const navigation = [
-    { title: 'Inicio', id: 'home' },
     { title: 'Servicios', id: 'services' },
     { title: 'Quienes somos', id: 'about' },
     { title: 'Empleos', id: 'jobs' },
@@ -17,19 +16,16 @@ export const Navbar = () => {
     <div className="w-full">
       <nav className="container relative flex flex-wrap items-center justify-between mx-auto p-2 lg:justify-between">
         {/* Logo  */}
-        <Link href="#home">
-          <span className="flex items-center space-x-2 text-2xl font-medium text-indigo-500 dark:text-gray-100">
-            <span>
-              <Image
-                src="/img/recorte_manellax.png"
-                width="200"
-                alt="logo "
-                height="150"
-                className="w-36, h-30"
-              />
-            </span>
-            {/* <span className="rounded-lg  bg-indigo-600 text-white p-1">M</span> */}
-          </span>
+        <Link href="#home" className='flex inline gap-2'>
+          <Image
+            src="/img/manellax-simple-recorte.png"
+            width="30"
+            alt="logo "
+            height="30"
+          />
+          <div className="flex items-center">
+            <h1 className=""><b>MANELLAX</b></h1>
+          </div>
         </Link>
 
         {/* menu  */}
