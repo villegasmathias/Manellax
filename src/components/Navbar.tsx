@@ -14,7 +14,7 @@ export const Navbar = () => {
 
   return (
     <div className="w-full">
-      <nav className=" shadow-md bg-gradient-to-r from-blue-700 via-blue-500 to-blue-200 relative flex flex-wrap items-center justify-between mx-auto p-8 lg:justify-between">
+      <nav className=" shadow-md bg-gradient-to-r from-blue-200 via-blue-500 to-blue-700 relative flex flex-wrap items-center justify-between mx-auto p-8 lg:justify-between">
         {/* Logo  */}
         <Link href="#home" className="flex  gap-2">
           <Image
@@ -44,7 +44,7 @@ export const Navbar = () => {
                       offset: -25,
                     });
                   }}
-                  className="inline-block px-4 py-2 text-lg font-normal text-gray-800 no-underline rounded-md dark:text-gray-200 hover:text-blue-700 focus:text-blue-700 focus:bg-blue-100 focus:outline-none dark:focus:bg-gray-800">
+                  className="inline-block px-4 py-2 text-lg font-normal text-white font-bold no-underline rounded-md dark:text-gray-200 hover:text-blue-700 focus:text-blue-700 focus:bg-blue-100 focus:outline-none dark:focus:bg-gray-800">
                   {menu.title}
                 </button>
               </li>

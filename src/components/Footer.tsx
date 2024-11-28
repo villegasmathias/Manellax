@@ -38,31 +38,10 @@ export function Footer() {
             </div>
           </div>
           <div>
-            <div className="pb-2">Siguenos en</div>
-            <div className="flex space-x-5 text-gray-400 dark:text-gray-500">
+            <div className="pb-2">Siguenos en:</div>
+            <div className="flex justify-center space-x-5 text-gray-400 dark:text-gray-500">
               <a
-                href="https://twitter.com/manellax"
-                target="_blank"
-                rel="noopener">
-                <span className="sr-only">Twitter</span>
-                <Twitter />
-              </a>
-              <a
-                href="https://facebook.com/manellax"
-                target="_blank"
-                rel="noopener">
-                <span className="sr-only">Facebook</span>
-                <Facebook />
-              </a>
-              <a
-                href="https://instagram.com/manellax"
-                target="_blank"
-                rel="noopener">
-                <span className="sr-only">Instagram</span>
-                <Instagram />
-              </a>
-              <a
-                href="https://linkedin.com/manellax"
+                href="https://www.linkedin.com/company/manellax/"
                 target="_blank"
                 rel="noopener">
                 <span className="sr-only">Linkedin</span>
