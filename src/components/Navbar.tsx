@@ -44,7 +44,7 @@ export const Navbar = () => {
                       offset: -25,
                     });
                   }}
-                  className="inline-block px-4 py-2 text-lg  text-white font-bold no-underline rounded-md dark:text-gray-200 hover:text-blue-700 focus:text-blue-700 focus:bg-blue-100 focus:outline-none dark:focus:bg-gray-800">
+                  className="inline-block px-4 py-2 text-lg  text-white font-bold no-underline rounded-md focus:text-blue-700 focus:bg-blue-100 focus:outline-none dark:focus:bg-gray-800">
                   {menu.title}
                 </button>
               </li>
