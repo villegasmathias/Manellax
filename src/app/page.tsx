@@ -70,8 +70,15 @@ export default function Home() {
           <SectionTitle
             preTitle="Servicios de Manellax"
             title=" Consultoría industrial integral">
-            Inspeccion de obras, redacción de procedimientos, reclutamiento de
-            nuevos talentos, recursos humanos y capacitaciones.
+            MANELLAX es una firma de consultoría especializada en los sectores
+            de gas, petróleo y minería. Nos dedicamos a conectar a nuestros
+            clientes con el candidato ideal para cada puesto, asegurando un
+            ajuste perfecto entre talento y organización. Además de reclutar
+            nuevos talentos y gestionar RRHH brindamos servicios de Inspección
+            general de obras, Redacción y revisión de procedimientos operativos
+            y de calidad, capacitaciones y conferencias de temas específicos a
+            demanda. Inspeccion de obras, redacción de procedimientos,
+            reclutamiento de nuevos talentos, recursos humanos y capacitaciones.
           </SectionTitle>
         </div>
       </Element>
@@ -86,14 +93,37 @@ export default function Home() {
       </div>
 
       <Element name="servicesBuilding">
-        <SectionTitle background title="Servicios de construccón">
-          También ofrecemos los siguientes servicios:
+        <SectionTitle
+          preTitle="También ofrecemos los siguientes servicios:"
+          background
+          title="Servicios de construccón">
+          En Manellax SAS, nuestro equipo de socios y gerentes cuenta con más de
+          20 años de experiencia en consultoría y construcción de prefabricados.
+          Nos especializamos en ofrecer soluciones innovadoras y personalizadas
+          para proyectos de gran envergadura, siempre con un enfoque en la
+          calidad, la eficiencia y la sostenibilidad. Nos apasiona colaborar
+          estrechamente con nuestros clientes, convirtiéndonos en su socio
+          estratégico para llevar sus proyectos al siguiente nivel.
         </SectionTitle>
         <Benefits data={benefitOne} />
         <BenefitsRigth data={benefitTwo} />
       </Element>
       {/* Quienes somos  */}
-      <div className="bg-gray-100 py-20">
+      <div className="bg-gray-100 pb-20">
+        <div className="bg-[url('/img/industry-pictures.webp')] bg-cover">
+          <div className="flex justify-center items-center w-full">
+            <div className=" border-none">
+              <Image
+                src="/img/manellax-blanco-nuevo.png"
+                width="616"
+                height="617"
+                className={'object-cover bg-black/10'}
+                alt="Hero Illustration"
+              />
+            </div>
+          </div>
+        </div>
+        {/* <img src="/img/fotobanda.jpg" className="w-full h-auto object-cover" /> */}
         <Element name="about">
           <div id="about">
             <SectionTitle preTitle="Quienes somos" title="Visión">

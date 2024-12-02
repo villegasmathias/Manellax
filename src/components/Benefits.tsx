@@ -20,7 +20,7 @@ interface BenefitsProps {
 export const Benefits = (props: Readonly<BenefitsProps>) => {
   const { data } = props;
   return (
-    <div className="flex flex-wrap mb-20 shadow-md pb-20 bg-gray-100">
+    <div className="flex flex-wrap mb-20 shadow-md pb-20 bg-gray-100 pt-10">
       <div
         className={`flex items-center justify-center w-full lg:w-1/2
         }`}>

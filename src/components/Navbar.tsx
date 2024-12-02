@@ -19,9 +19,9 @@ export const Navbar = () => {
         <Link href="#home" className="flex  gap-2">
           <Image
             src="/img/manellax-simple-recorte.png"
-            width="30"
+            width="45"
             alt="logo "
-            height="30"
+            height="45"
           />
           <div className="flex items-center">
             <h1 className="">
@@ -44,7 +44,7 @@ export const Navbar = () => {
                       offset: -25,
                     });
                   }}
-                  className="inline-block px-4 py-2 text-lg font-normal text-white font-bold no-underline rounded-md dark:text-gray-200 hover:text-blue-700 focus:text-blue-700 focus:bg-blue-100 focus:outline-none dark:focus:bg-gray-800">
+                  className="inline-block px-4 py-2 text-lg  text-white font-bold no-underline rounded-md dark:text-gray-200 hover:text-blue-700 focus:text-blue-700 focus:bg-blue-100 focus:outline-none dark:focus:bg-gray-800">
                   {menu.title}
                 </button>
               </li>
