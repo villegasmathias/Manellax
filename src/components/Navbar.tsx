@@ -14,20 +14,15 @@ export const Navbar = () => {
 
   return (
     <div className="w-full">
-      <nav className=" shadow-md bg-gradient-to-r from-blue-200 via-blue-500 to-blue-700 relative flex flex-wrap items-center justify-between mx-auto p-8 lg:justify-between">
+      <nav className=" shadow-md bg-gradient-to-r from-blue-200 via-blue-500 to-blue-700 relative flex flex-wrap items-center justify-between mx-auto px-2 lg:justify-between">
         {/* Logo  */}
         <Link href="#home" className="flex  gap-2">
           <Image
-            src="/img/manellax-simple-recorte.png"
-            width="45"
+            src="/img/recorte_manellax.png"
+            width="200"
             alt="logo "
-            height="45"
+            height="150"
           />
-          <div className="flex items-center">
-            <h1 className="">
-              <b>MANELLAX</b>
-            </h1>
-          </div>
         </Link>
 
         {/* menu  */}
