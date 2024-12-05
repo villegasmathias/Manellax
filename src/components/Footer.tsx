@@ -1,7 +1,7 @@
 import Link from 'next/link';
-import Image from 'next/image';
 import React from 'react';
 import { Container } from '@/components/Container';
+import { FirstLogo } from './FirstLogo';
 
 export function Footer() {
   const navigation = ['Product', 'Features', 'Pricing', 'Company', 'Blog'];
@@ -16,13 +16,7 @@ export function Footer() {
             <Link href="/">
               <span className="flex items-center space-x-2 text-2xl font-medium text-blue-700 dark:text-gray-100">
                 <span>
-                  <Image
-                    src="/img/recorte_manellax.png"
-                    width="200"
-                    alt="logo "
-                    height="150"
-                    className="w-36, h-30"
-                  />
+                  <FirstLogo />
                 </span>
               </span>
             </Link>
@@ -55,8 +49,6 @@ export function Footer() {
           </div>
         </div>
       </Container>
-      {/* Do not remove this */}
-      {/* <Backlink /> */}
     </div>
   );
 }

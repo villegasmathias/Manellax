@@ -1,8 +1,7 @@
 'use client';
 import Link from 'next/link';
-import ThemeChanger from './DarkSwitch';
-import Image from 'next/image';
 import { scroller } from 'react-scroll';
+import { FirstLogo } from './FirstLogo';
 
 export const Navbar = () => {
   const navigation = [
@@ -17,12 +16,7 @@ export const Navbar = () => {
       <nav className=" shadow-md bg-gradient-to-r from-blue-200 via-blue-500 to-blue-700 relative flex flex-wrap items-center justify-between mx-auto px-2 lg:justify-between">
         {/* Logo  */}
         <Link href="#home" className="flex  gap-2">
-          <Image
-            src="/img/recorte_manellax.png"
-            width="200"
-            alt="logo "
-            height="150"
-          />
+          <FirstLogo />
         </Link>
 
         {/* menu  */}
