@@ -5,9 +5,10 @@ import { FirstLogo } from './FirstLogo';
 
 export const Navbar = () => {
   const navigation = [
+    { title: 'Home', id: 'home' },
     { title: 'Servicios', id: 'services' },
     { title: 'Quienes somos', id: 'about' },
-    { title: 'Empleos', id: 'jobs' },
+    // { title: 'Empleos', id: 'jobs' },
     { title: 'Contactos', id: 'footer' },
   ];
 

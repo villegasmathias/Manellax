@@ -1,67 +1,67 @@
 'use client';
 import { Container } from '@/components/Container';
-import { Hero } from '@/components/Hero';
+// import { Hero } from '@/components/Hero';
 import { SectionTitle } from '@/components/SectionTitle';
 import { Benefits } from '@/components/Benefits';
-import { Video } from '@/components/Video';
+// import { Video } from '@/components/Video';
 import { Testimonials } from '@/components/Testimonials';
-import { Faq } from '@/components/Faq';
-import { Cta } from '@/components/Cta';
+// import { Faq } from '@/components/Faq';
+// import { Cta } from '@/components/Cta';
 import Image from 'next/image';
 import {} from '@heroicons/react/24/solid';
 import { benefitOne, benefitTwo } from '@/components/data';
-import { useForm, useWatch } from 'react-hook-form';
+// import { useForm, useWatch } from 'react-hook-form';s
 import { useState } from 'react';
 import { Element } from 'react-scroll';
 import { BenefitsRigth } from '@/components/BenefitsRigth';
 
 export default function Home() {
-  const [isSuccess, setIsSuccess] = useState(false);
+  // const [isSuccess, setIsSuccess] = useState(false);
 
-  const {
-    register,
-    handleSubmit,
-    reset,
-    control,
-    formState: { errors, isSubmitSuccessful, isSubmitting },
-  } = useForm({
-    mode: 'onTouched',
-  });
+  // const {
+  //   register,
+  //   handleSubmit,
+  //   reset,
+  //   control,
+  //   formState: { errors, isSubmitSuccessful, isSubmitting },
+  // } = useForm({
+  //   mode: 'onTouched',
+  // });
 
-  const userName = useWatch({
-    control,
-    name: 'Enzo',
-    defaultValue: 'Calderon',
-  });
+  // const userName = useWatch({
+  //   control,
+  //   name: 'Enzo',
+  //   defaultValue: 'Calderon',
+  // });
 
-  const onSubmit = async (data: any, e: any) => {
-    console.log(data);
-    await fetch('https://api.web3forms.com/submit', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        Accept: 'application/json',
-      },
-      body: JSON.stringify(data, null, 2),
-    })
-      .then(async (response) => {
-        let json = await response.json();
-        if (json.success) {
-          setIsSuccess(true);
-          // setMessage(json.message);
-          e.target.reset();
-          reset();
-        } else {
-          setIsSuccess(false);
-          // setMessage(json.message);
-        }
-      })
-      .catch((error) => {
-        setIsSuccess(false);
-        // setMessage("Client Error. Please check the console.log for more info");
-        console.log(error);
-      });
-  };
+  // const onSubmit = async (data: any, e: any) => {
+  //   console.log(data);
+  //   await fetch('https://api.web3forms.com/submit', {
+  //     method: 'POST',
+  //     headers: {
+  //       'Content-Type': 'application/json',
+  //       Accept: 'application/json',
+  //     },
+  //     body: JSON.stringify(data, null, 2),
+  //   })
+  //     .then(async (response) => {
+  //       let json = await response.json();
+  //       if (json.success) {
+  //         setIsSuccess(true);
+  //         // setMessage(json.message);
+  //         e.target.reset();
+  //         reset();
+  //       } else {
+  //         setIsSuccess(false);
+  //         // setMessage(json.message);
+  //       }
+  //     })
+  //     .catch((error) => {
+  //       setIsSuccess(false);
+  //       // setMessage("Client Error. Please check the console.log for more info");
+  //       console.log(error);
+  //     });
+  // };
   return (
     <>
       {/* Servicios */}
@@ -155,7 +155,7 @@ export default function Home() {
       <Testimonials />
 
       {/* Empleos */}
-      <div className=" mt-20 mb-10 py-16 bg-gray-100">
+      {/* <div className=" mt-20 mb-10 py-16 bg-gray-100">
         <SectionTitle
           title="Trabaja con nosotros"
           preTitle="Podés sumarte a nuestro equipo"
@@ -298,22 +298,6 @@ export default function Home() {
                       )}
                     </button>
                   </div>
-                  {/* <p
-                              className="text-xs text-center text-gray-400"
-                              id="result"
-                            >
-                              <span>
-                                Powered by{" "}
-                                <a
-                                  href="https://Web3Forms.com"
-                                  className="text-gray-600"
-                                  target="_blank"
-                                  rel="noopener noreferrer"
-                                >
-                                  Web3Forms
-                                </a>
-                              </span>
-                            </p> */}
                 </form>
               )}
 
@@ -335,7 +319,6 @@ export default function Home() {
                   <h3 className="py-5 text-xl text-green-500">
                     Mensaje enviado correctamente
                   </h3>
-                  {/* <p className="text-gray-700 md:px-3">{Message}</p> */}
                   <button
                     className="mt-6 text-blue-800 focus:outline-none"
                     onClick={() => reset()}>
@@ -363,7 +346,6 @@ export default function Home() {
                   <h3 className="text-xl text-red-400 py-7">
                     Oops, ocurrió un error!
                   </h3>
-                  {/* <p className="text-gray-700 md:px-3">{Message}</p> */}
                   <button
                     className="mt-6 text-blue-800 focus:outline-none"
                     onClick={() => reset()}>
@@ -374,7 +356,7 @@ export default function Home() {
             </div>
           </div>
         </Element>
-      </div>
+      </div> */}
     </>
   );
 }
