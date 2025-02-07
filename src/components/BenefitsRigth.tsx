@@ -44,14 +44,12 @@ export const BenefitsRigth = (props: Readonly<BenefitsProps>) => {
       </div>
       <div className="flex items-center justify-center w-full lg:w-1/2">
         <div>
-          <Image
+          <img
             src={data.image}
             width={521}
             height={521}
             alt="Benefits"
             className={'object-cover'}
-            placeholder="blur"
-            blurDataURL={data.image.src}
           />
         </div>
       </div>

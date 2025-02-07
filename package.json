@@ -1,7 +1,7 @@
 {
-  "name": "nextly-template",
-  "version": "2.0.0",
-  "description": "Nextly Landing Page Template",
+  "name": "manellax-landing",
+  "version": "1.0.0",
+  "description": "Page web for Manellax",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -9,18 +9,17 @@
     "start": "next start",
     "lint": "next lint",
     "format": "prettier --check --ignore-path .gitignore .",
-  "format:fix": "prettier --write --ignore-path .gitignore ."
+    "format:fix": "prettier --write --ignore-path .gitignore ."
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/web3templates/nextly-template"
+    "url": "https://github.com/EnzoGC02/manellax"
   },
   "keywords": [
     "nextjs",
-    "tailwindcss",
-    "free"
+    "tailwindcss"
   ],
-  "author": "Surjith S M",
+  "author": "Enzo Calderon",
   "license": "ISC",
   "dependencies": {
     "@headlessui/react": "^2.0.3",

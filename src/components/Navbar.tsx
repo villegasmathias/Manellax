@@ -14,7 +14,7 @@ export const Navbar = () => {
 
   return (
     <div className="w-full">
-      <nav className=" shadow-md bg-gradient-to-r from-blue-200 via-blue-500 to-blue-700 relative flex flex-wrap items-center justify-between mx-auto px-2 lg:justify-between">
+      <nav className=" shadow-md bg-gradient-to-r from-blue-200 via-[#153E7D] to-[#0B2143] relative flex flex-wrap items-center justify-between mx-auto px-2 lg:justify-between">
         {/* Logo  */}
         <Link href="#home" className="flex  gap-2">
           <FirstLogo />

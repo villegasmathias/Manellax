@@ -24,12 +24,12 @@ export function Footer() {
           <div>
             <div className="flex gap-2 mb-2">
               <Email />
-              <div className=""> info@manellax.com.ar </div>
+              <div className=""> info@manellax.com</div>
             </div>
-            <div className="flex gap-2 mb-2">
+            {/* <div className="flex gap-2 mb-2">
               <Phone />
               <div> 2615881485 / 2616127721 </div>
-            </div>
+            </div> */}
             <div className="flex gap-2">
               <Location />
               Lujan de Cuyo, Mendoza. Argentina

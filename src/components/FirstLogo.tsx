@@ -5,4 +5,4 @@ export const FirstLogo = ({
   width = 250,
   height = 200,
   alt = 'Manellax',
-}) => <Image src={src} width={width} height={height} alt={alt} />;
+}) => <img src={src} width={width} height={height} alt={alt} />;

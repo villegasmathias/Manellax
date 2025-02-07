@@ -3,14 +3,14 @@ import Image from 'next/image';
 export const Hero = () => {
   return (
     <>
-      <div className="flex flex-wrap bg-[url('/img/Minas-galeria-animada.webp')] bg-cover">
-        <div className="flex w-full bg-black/60 lg: p-20">
+      <div className="flex flex-wrap bg-[url('/img/petrolera.jpg')] bg-cover h-[720px]">
+        <div className="flex w-full lg: p-20">
           <div className="flex justify-center items-center w-full lg:w-1/2">
             <div className="max-w-2xl mb-8 text-center">
-              <h1 className="text-4xl font-bold leading-snug tracking-tight text-gray-200 lg:text-4xl lg:leading-tight xl:text-6xl xl:leading-tight">
+              <h1 className="text-4xl font-bold leading-snug tracking-tight text-white lg:text-4xl lg:leading-tight xl:text-6xl xl:leading-tight">
                 ¡Bienvenidos!
               </h1>
-              <p className="py-5 text-xl leading-normal text-gray-100 lg:text-xl xl:text-2xl">
+              <p className="py-5 text-xl leading-normal text-white lg:text-xl xl:text-2xl">
                 Ofrecemos un servicio integral de consultoría diseñado para
                 satisfacer las necesidades específicas de empresas de las
                 industrias del gas, petróleo y minería. Nuestro compromiso con
@@ -22,7 +22,7 @@ export const Hero = () => {
           </div>
           <div className="flex justify-center items-center w-full lg:w-1/2">
             <div className="">
-              <Image
+              <img
                 src="/img/manellax-blanco-nuevo.png"
                 width="616"
                 height="617"
