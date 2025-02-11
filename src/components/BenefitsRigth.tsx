@@ -1,7 +1,7 @@
-import Image from 'next/image';
 import React from 'react';
-import { Container } from '@/components/Container';
-import { CheckIcon, FaceSmileIcon } from '@heroicons/react/24/solid';
+import { Slide } from 'react-slideshow-image';
+import 'react-slideshow-image/dist/styles.css';
+import { CheckIcon } from '@heroicons/react/24/solid';
 
 interface BenefitsProps {
   imgPos?: 'left' | 'right';
@@ -12,19 +12,44 @@ interface BenefitsProps {
     image: any;
     bullets: {
       title: string;
-      desc: string;
-      icon: React.ReactNode;
     }[];
   };
 }
 export const BenefitsRigth = (props: Readonly<BenefitsProps>) => {
+  const spanStyle = {
+    padding: '20px',
+    background: '#efefef',
+    color: '#000000',
+  };
+  const divStyle = {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundSize: 'cover',
+    height: '400px',
+  };
+
+  const slideImages = [
+    {
+      url: 'https://images.unsplash.com/photo-1509721434272-b79147e0e708?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80',
+      caption: 'Slide 1',
+    },
+    {
+      url: 'https://images.unsplash.com/photo-1506710507565-203b9f24669b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1536&q=80',
+      caption: 'Slide 2',
+    },
+    {
+      url: 'https://images.unsplash.com/photo-1536987333706-fc9adfb10d91?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80',
+      caption: 'Slide 3',
+    },
+  ];
   const { data } = props;
   return (
-    <div className="flex flex-wrap shadow-md px-10 pb-10">
+    <div className="flex flex-wrap shadow-md px-10 pb-10 bg-[#003459]">
       <div className="flex items-center justify-center w-full lg:w-1/2">
         <div>
           <div className="flex flex-col w-full">
-            <h3 className="max-w-2xl mt-3 text-3xl font-bold leading-snug tracking-tight text-gray-800 lg:leading-tight lg:text-4xl dark:text-white">
+            <h3 className="max-w-2xl mt-3 text-3xl font-bold leading-snug tracking-tight text-white lg:leading-tight lg:text-4xl dark:text-white">
               {data.title}
             </h3>
 
@@ -35,15 +60,29 @@ export const BenefitsRigth = (props: Readonly<BenefitsProps>) => {
 
           <div className="w-full">
             {data.bullets.map((item, index) => (
-              <Benefit key={index} title={item.title} icon={item.icon}>
-                {item.desc}
-              </Benefit>
+              <Benefit key={index} title={item.title}></Benefit>
             ))}
           </div>
         </div>
       </div>
       <div className="flex items-center justify-center w-full lg:w-1/2">
-        <div>
+        <div className="slide-container">
+          <Slide>
+            {slideImages.map((slideImage, index) => (
+              <div key={index} className="each-slide">
+                <div
+                  style={{
+                    ...divStyle,
+                    backgroundImage: `url(${slideImage.url})`,
+                  }}>
+                  <span style={spanStyle}>{slideImage.caption}</span>
+                </div>
+              </div>
+            ))}
+          </Slide>
+        </div>
+
+        {/* <div>
           <img
             src={data.image}
             width={521}
@@ -51,7 +90,7 @@ export const BenefitsRigth = (props: Readonly<BenefitsProps>) => {
             alt="Benefits"
             className={'object-cover'}
           />
-        </div>
+        </div> */}
       </div>
     </div>
   );
@@ -64,7 +103,7 @@ function Benefit(props: any) {
         <CheckIcon className="text-white" />
       </div>
       <div>
-        <h4 className="text-xl font-medium text-gray-800 dark:text-gray-200">
+        <h4 className="text-xl font-medium text-white dark:text-gray-200">
           {props.title}
         </h4>
         {/* <p className="mt-1 text-gray-500 dark:text-gray-400">

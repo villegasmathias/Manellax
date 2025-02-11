@@ -3,8 +3,8 @@ import Image from 'next/image';
 export const Hero = () => {
   return (
     <>
-      <div className="flex flex-wrap bg-[url('/img/petrolera.jpg')] bg-cover h-[720px]">
-        <div className="flex w-full lg: p-20">
+      <div className="flex flex-wrap bg-[url('/img/petrolera.jpg')] bg-cover h-[720px] xl:h-[1000px]">
+        <div className="flex w-full lg: px-20">
           <div className="flex justify-center items-center w-full lg:w-1/2">
             <div className="max-w-2xl mb-8 text-center">
               <h1 className="text-4xl font-bold leading-snug tracking-tight text-white lg:text-4xl lg:leading-tight xl:text-6xl xl:leading-tight">

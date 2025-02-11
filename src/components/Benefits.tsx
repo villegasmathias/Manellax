@@ -12,15 +12,13 @@ interface BenefitsProps {
     image: string;
     bullets: {
       title: string;
-      desc: string;
-      icon: React.ReactNode;
     }[];
   };
 }
 export const Benefits = (props: Readonly<BenefitsProps>) => {
   const { data } = props;
   return (
-    <div className="flex flex-wrap mb-20 shadow-md pb-20 bg-gray-100 pt-10">
+    <div className="flex flex-wrap  shadow-md pb-20 bg-[#003459] pt-10">
       <div
         className={`flex items-center justify-center w-full lg:w-1/2
         }`}>
@@ -38,7 +36,7 @@ export const Benefits = (props: Readonly<BenefitsProps>) => {
       <div className={`flex flex-wrap items-center w-full lg:w-1/2`}>
         <div>
           <div className="flex flex-col w-full">
-            <h3 className="max-w-2xl mt-3 text-3xl font-bold leading-snug tracking-tight text-gray-800 lg:leading-tight lg:text-4xl dark:text-white">
+            <h3 className="max-w-2xl mt-3 text-3xl font-bold leading-snug tracking-tight text-white lg:leading-tight lg:text-4xl">
               {data.title}
             </h3>
 
@@ -49,9 +47,7 @@ export const Benefits = (props: Readonly<BenefitsProps>) => {
 
           <div className="w-full">
             {data.bullets.map((item, index) => (
-              <Benefit key={index} title={item.title} icon={item.icon}>
-                {item.desc}
-              </Benefit>
+              <Benefit key={index} title={item.title}></Benefit>
             ))}
           </div>
         </div>
@@ -67,9 +63,7 @@ function Benefit(props: any) {
         <CheckIcon className="text-white" />
       </div>
       <div>
-        <h4 className="text-xl font-medium text-gray-800 dark:text-gray-200">
-          {props.title}
-        </h4>
+        <h4 className="text-xl font-medium text-white">{props.title}</h4>
         {/* <p className="mt-1 text-gray-500 dark:text-gray-400">
             {props.children}
           </p> */}

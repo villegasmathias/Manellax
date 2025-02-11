@@ -7,7 +7,7 @@ export function Footer() {
   const navigation = ['Product', 'Features', 'Pricing', 'Company', 'Blog'];
   const legal = ['Terms', 'Privacy', 'Legal'];
   return (
-    <div className="relative pb-4">
+    <div className="relative pb-4 bg-gray-200 text-black">
       <Container>
         <div
           id="footer"
