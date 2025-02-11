@@ -1,10 +1,5 @@
-import Image from 'next/image';
 import React from 'react';
 import { Container } from '@/components/Container';
-
-import userOneImg from '../../public/img/user1.jpg';
-import userTwoImg from '../../public/img/user2.jpg';
-import userThreeImg from '../../public/img/user3.jpg';
 
 export const Testimonials = () => {
   return (
@@ -12,7 +7,7 @@ export const Testimonials = () => {
       <div className="gap-10 lg:grid-cols-2 mt-8">
         <div className="flex flex-wrap gap-10 items-center justify-center pb-10 ">
           <div className="">
-            <div className="flex flex-col justify-between w-80 h-96 bg-gray-100 px-12 rounded-2xl py-10 dark:bg-trueGray-800">
+            <div className="flex flex-col justify-between w-80 h-96 bg-[#003459] px-12 rounded-2xl py-10">
               <div className="self-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -39,7 +34,7 @@ export const Testimonials = () => {
             </div>
           </div>
           <div className="">
-            <div className="flex flex-col justify-between w-80 h-96 bg-gray-100 px-12 rounded-2xl py-10 dark:bg-trueGray-800">
+            <div className="flex flex-col justify-between w-80 h-96 bg-[#003459] px-12 rounded-2xl py-10 dark:bg-trueGray-800">
               <div className="self-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -66,7 +61,7 @@ export const Testimonials = () => {
             </div>
           </div>
           <div className="">
-            <div className="flex flex-col justify-between w-80 h-96 bg-gray-100 px-12 rounded-2xl py-10 dark:bg-trueGray-800">
+            <div className="flex flex-col justify-between w-80 h-96 bg-[#003459] px-12 rounded-2xl py-10 dark:bg-trueGray-800">
               <div className="self-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -96,7 +91,7 @@ export const Testimonials = () => {
         </div>
         <div className="flex flex-wrap gap-10 items-center justify-center ">
           <div className="">
-            <div className="flex flex-col justify-between w-80 h-96 bg-gray-100 px-12 rounded-2xl py-10 dark:bg-trueGray-800">
+            <div className="flex flex-col justify-between w-80 h-96 bg-[#003459] px-12 rounded-2xl py-10 dark:bg-trueGray-800">
               <div className="self-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -124,7 +119,7 @@ export const Testimonials = () => {
             </div>
           </div>
           <div className="">
-            <div className="flex flex-col justify-between w-80 h-96 bg-gray-100 px-12 rounded-2xl py-10 dark:bg-trueGray-800">
+            <div className="flex flex-col justify-between w-80 h-96 bg-[#003459] px-12 rounded-2xl py-10 dark:bg-trueGray-800">
               <div className="self-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -156,33 +151,12 @@ export const Testimonials = () => {
   );
 };
 
-interface AvatarProps {
-  image: any;
-  name: string;
-  title: string;
-}
-
-function Avatar(props: Readonly<AvatarProps>) {
-  return (
-    <div className="flex items-center mt-8 space-x-3">
-      <div className="flex-shrink-0 overflow-hidden rounded-full w-14 h-14">
-        <img src={props.image} width="40" height="40" alt="Avatar" />
-      </div>
-      <div>
-        <div className="text-lg font-medium">{props.name}</div>
-        <div className="text-gray-600 dark:text-gray-400">{props.title}</div>
-      </div>
-    </div>
-  );
-}
-
 function Mark(props: { readonly children: React.ReactNode }) {
   return (
     <>
-      {' '}
-      <mark className="text-indigo-800 bg-indigo-100 rounded-md ring-indigo-100 ring-4 dark:ring-indigo-900 dark:bg-indigo-900 dark:text-indigo-200">
+      <mark className="text-gray-100 bg-[#007ea7] rounded-md ring-[#003459] ring-4">
         {props.children}
-      </mark>{' '}
+      </mark>
     </>
   );
 }
